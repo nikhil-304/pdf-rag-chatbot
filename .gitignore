@@ -91,9 +91,16 @@ logs/
 *.sqlite
 *.sqlite3
 
-# Uploads (sensitive documents)
-uploads/
-**/uploads/
+# Uploads (sensitive documents - allow directory structure but ignore files)
+uploads/*.pdf
+uploads/*.doc
+uploads/*.docx
+**/uploads/*.pdf
+**/uploads/*.doc
+**/uploads/*.docx
+# Allow .gitkeep files to maintain directory structure
+!uploads/.gitkeep
+!**/uploads/.gitkeep
 temp/
 tmp/
 
