@@ -8,7 +8,8 @@ const config = {
   },
   production: {
     API_BASE:
-      import.meta.env.VITE_API_BASE || "https://your-backend-domain.com",
+      import.meta.env.VITE_API_BASE ||
+      "https://pdf-rag-backend-u3ba.onrender.com",
     MAX_FILE_SIZE: 10 * 1024 * 1024, // 10MB
     ALLOWED_FILE_TYPES: ["application/pdf"],
     UPLOAD_TIMEOUT: 60000, // 60 seconds
