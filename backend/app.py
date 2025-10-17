@@ -342,7 +342,7 @@ def chat():
 
 Please provide a helpful and accurate answer based on the information provided. If the context doesn't contain relevant information, please say so and provide a general response."""
 
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel("gemini-2.0-flash")
         response = model.generate_content(prompt)
 
         return jsonify(
